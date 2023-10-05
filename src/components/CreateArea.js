@@ -57,6 +57,7 @@ function CreateArea({ onAdd }) {
             
                 <div
                     className='form'
+                    ref={formRef}
                 >
                     <div>
                         {isExpanded && (
@@ -73,7 +74,10 @@ function CreateArea({ onAdd }) {
                             />
                         </div>
                         )}
-                        <div className='text-area-div'>
+                        <div 
+                            className='text-area-div'
+                            ref={formRef}
+                        >
                             <textarea
                                 className={isExpanded ? 'text-area-active' : 'textarea'}
                                 value={note.content}
