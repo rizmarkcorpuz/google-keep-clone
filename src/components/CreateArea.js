@@ -6,6 +6,7 @@ function CreateArea({ onAdd }) {
     const titleRef = useRef();
     const contentRef = useRef();
     const formRef = useRef();
+    const textAreaRef = useRef();
 
     const [isExpanded, setExpanded] = useState(false);
 
@@ -42,7 +43,7 @@ function CreateArea({ onAdd }) {
     }
 
     window.addEventListener('click' , (e) => {
-        if(e.target !== titleRef.current && e.target !== contentRef.current && e.target !== formRef.current){
+        if(e.target !== titleRef.current && e.target !== contentRef.current && e.target !== formRef.current && e.target !== textAreaRef.current){
             setExpanded(false)
             //console.log('clicked')
         }
