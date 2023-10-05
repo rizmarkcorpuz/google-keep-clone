@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #ffffff;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    margin: auto -10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 2px 0 rgb(110, 110, 110);
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+  }
+  
+  .span {
+    color: #5f6368;
+    display: inline-block;
+    font-family: "Product Sans",Arial,sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    padding-left: 8px;
+    position: relative;
+    top: -1.5px;
+    vertical-align: middle;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+  }
+  
+  .form{
+    position: relative;
+    width: 600px;
+    margin: 32px auto 50px auto;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 7px rgb(128, 128, 128);
+    min-height: 43px;
+    padding: 1px;
+    -webkit-transition: box-shadow 0.218s ease-in-out,background-color 0.218s ease-in;
+    transition: box-shadow 0.218s ease-in-out,background-color 0.218s ease-in;
+  }
+
+  .input-div{
+    letter-spacing: .00625em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding-bottom: 10px;
+    min-height: 43px;
+    padding: 12px 16px 12px 16px;
+    -webkit-transition: box-shadow 0.218s ease-in-out,background-color 0.218s ease-in;
+    transition: box-shadow 0.218s ease-in-out,background-color 0.218s ease-in;
+  }
+
+  .text-area-div{
+    letter-spacing: .00625em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    min-height: 43px;
+    padding: 12px 16px 1px 16px;
+    -webkit-transition: box-shadow 0.218s ease-in-out,background-color 0.218s ease-in;
+    transition: box-shadow 0.218s ease-in-out,background-color 0.218s ease-in;
+    color: rgba(0,0,0,0.702);
+  }
+
+  .form-1{
+    position: relative;
+    width: 600px;
+    margin: 32px auto 50px auto;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 7px rgb(128, 128, 128);
+    min-height: 43px;
+    padding: 1px;
+    -webkit-transition: box-shadow 0.218s ease-in-out,background-color 0.218s ease-in;
+    transition: box-shadow 0.218s ease-in-out,background-color 0.218s ease-in;
+  }
+  
+  .input {
+    width: 100%;
+    border: none;
+    min-height: 30px;
+    /* padding: 16px 16px 0 16px; */
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    resize: none;
+    letter-spacing: .00625em;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    color: rgba(0,0,0,0.6);
+  }
+
+  .textarea {
+    width: 100%;
+    border: none;
+    /* padding: 4px 10px; */
+    padding-top: 2px;
+    outline: none;
+    font-size: 1rem;
+    resize: none;
+    font-family: Roboto,Arial,sans-serif;
+  }
+
+  .text-area-active{
+    width: 100%;
+    border: none;
+    /* padding: 4px 10px; */
+    /* padding-top: 8px; */
+    outline: none;
+    font-size: .875rem;
+    font-weight: 500;
+    resize: none;
+    font-family: Roboto,Arial,sans-serif;
+    color: rgba(0,0,0,0.702);
+  }
+  
+  .button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 18px;
+    bottom: -18px;
+    background: rgb(255, 200, 18);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgb(165, 165, 165);
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .note {
+    background: #ffffff;
+    width: 240px;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgb(175, 175, 175);
+    padding: 10px;
+    margin: 16px;
+    float: left;
+    margin-right: 0;
+  }
+  
+  .note h1 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+  
+  .note p {
+    font-size: 1rem;
+    color: #6f212b;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .note button {
+    position: relative;
+    float: right;
+    color: #f88651;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .count {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  .footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
+  
