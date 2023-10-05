@@ -50,7 +50,7 @@ function CreateArea({ onAdd }) {
 
 
   return (
-    <div>
+    <div ref={formRef}>
         <div 
             ref={formRef}
         >
@@ -61,7 +61,10 @@ function CreateArea({ onAdd }) {
                 >
                     <div>
                         {isExpanded && (
-                        <div className='input-div'>
+                        <div 
+                            className='input-div'
+                            ref={formRef}
+                        >
                             <input 
                                 className='input'
                                 value={note.title}
@@ -76,7 +79,7 @@ function CreateArea({ onAdd }) {
                         )}
                         <div 
                             className='text-area-div'
-                            ref={formRef}
+                            ref={textAreaRef}
                         >
                             <textarea
                                 className={isExpanded ? 'text-area-active' : 'textarea'}
